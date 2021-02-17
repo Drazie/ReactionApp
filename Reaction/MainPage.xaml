@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Reaction.MainPage">
+
+    <StackLayout
+        Padding="10, 20, 10, 0">
+        <Grid >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="15*"/>
+            </Grid.RowDefinitions>
+            <Label Text="Reaction Test"
+                   HorizontalOptions="Center"
+                   Grid.Row="0"
+                   FontSize="30"/>
+            <Button Grid.Row="1"
+                    Text="Start test"
+                    VerticalOptions="Center"
+                    HorizontalOptions="CenterAndExpand"
+                    Padding="20, 0"
+                    TextColor="DodgerBlue"
+                    BackgroundColor="PaleGoldenrod"
+                    FontAttributes="Bold"
+                    x:Name="StartTestButton"
+                    Clicked="StartTestButton_Clicked"/>
+        </Grid>
+    </StackLayout>
+
+</ContentPage>

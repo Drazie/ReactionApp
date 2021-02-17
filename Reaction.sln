@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.808.9
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reaction.Android", "Reaction.Android\Reaction.Android.csproj", "{A1C08E7F-86EA-46E3-9CB7-8E727AA52DB2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reaction", "Reaction\Reaction.csproj", "{5D572013-1D2C-42A0-AB02-485032E6436B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A1C08E7F-86EA-46E3-9CB7-8E727AA52DB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1C08E7F-86EA-46E3-9CB7-8E727AA52DB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1C08E7F-86EA-46E3-9CB7-8E727AA52DB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1C08E7F-86EA-46E3-9CB7-8E727AA52DB2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D572013-1D2C-42A0-AB02-485032E6436B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D572013-1D2C-42A0-AB02-485032E6436B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D572013-1D2C-42A0-AB02-485032E6436B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D572013-1D2C-42A0-AB02-485032E6436B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8206E936-5EB4-4C6A-A86C-C0C8518F8234}
+	EndGlobalSection
+EndGlobal
