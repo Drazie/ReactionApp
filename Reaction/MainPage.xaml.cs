@@ -13,16 +13,14 @@ namespace Reaction
         public MainPage()
         {
             InitializeComponent();
-            
         }
 
         void StartTestButton_Clicked(System.Object sender, System.EventArgs e)
         {
             AppLabel.IsVisible = false;
-            var btn = sender as Button;
-            btn.IsVisible = false;
-            var initialTime = DateTime.Now;
+            StartTestButton.IsVisible = false;
             Random random = new Random();
+            var initialTime = DateTime.Now;
             int randomStart = random.Next(1, 5);
             var timeOfStart = initialTime.AddSeconds(randomStart);
 
@@ -31,7 +29,7 @@ namespace Reaction
             {
                 Main.BackgroundColor = Color.Green;
 
-                var tapGestureRecognizer = new TapGestureRecognizer();
+                var tapGestureRecognizer = new TapGestureRecognizer();                              
                 tapGestureRecognizer.Tapped += (s, et) => {
                     Main.BackgroundColor = Color.AliceBlue;
                     var timeOfClick = DateTime.Now;
@@ -52,16 +50,12 @@ namespace Reaction
 
         void NewTestButton_Clicked(System.Object sender, System.EventArgs e)
         {
-
             NewTestButton.IsVisible = false;
             resultLabel.IsVisible = false;
             sizeGridRow0.IsVisible = false;
             sizeGridRow1.IsVisible = false;
             StartTestButton.IsVisible = true;
-            StartTestButton.IsEnabled = true;
         }
-
-
 
     }
 }

@@ -36,12 +36,19 @@
                     x:Name="StartTestButton"
                     Clicked="StartTestButton_Clicked"
                     CornerRadius="20"/>
+
             <Label Grid.Row="1"
                    x:Name="resultLabel"
                    IsVisible="false"
                    VerticalOptions="Center"
                    HorizontalOptions="Center"
                    FontSize="25"/>
+            <Label Grid.Row="1"
+                   x:Name="resultDescription"
+                   IsVisible="false"
+                   HorizontalOptions="CenterAndExpand"
+                   FontSize="18"
+                   FontAttributes="Italic"/>
             <BoxView BackgroundColor="Transparent"
                      HeightRequest="450"
                      Grid.Row="1"
