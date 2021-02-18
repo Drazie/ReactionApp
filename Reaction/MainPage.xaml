@@ -3,17 +3,28 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Reaction.MainPage">
 
-    <StackLayout
-        Padding="10, 20, 10, 0">
-        <Grid >
+    <StackLayout x:Name="Main"
+                 BackgroundColor="AliceBlue"
+                 
+        Padding="10, 20, 10, 20">
+        <Grid x:Name="mainGrid">
             <Grid.RowDefinitions>
                 <RowDefinition Height="*"/>
-                <RowDefinition Height="15*"/>
+                <RowDefinition Height="15*"
+                               x:Name="TouchRow"/>
             </Grid.RowDefinitions>
-            <Label Text="Reaction Test"
+            <Label Text="Reaction"
+                   x:Name="AppLabel"
                    HorizontalOptions="Center"
                    Grid.Row="0"
-                   FontSize="30"/>
+                   FontSize="30"
+                   FontAttributes="Bold"
+                   TextColor="Black"/>
+            <BoxView BackgroundColor="Transparent"
+                     HeightRequest="30"
+                     Grid.Row="0"
+                     IsVisible="false"
+                     x:Name="sizeGridRow0"/>
             <Button Grid.Row="1"
                     Text="Start test"
                     VerticalOptions="Center"
@@ -23,7 +34,31 @@
                     BackgroundColor="PaleGoldenrod"
                     FontAttributes="Bold"
                     x:Name="StartTestButton"
-                    Clicked="StartTestButton_Clicked"/>
+                    Clicked="StartTestButton_Clicked"
+                    CornerRadius="20"/>
+            <Label Grid.Row="1"
+                   x:Name="resultLabel"
+                   IsVisible="false"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center"
+                   FontSize="25"/>
+            <BoxView BackgroundColor="Transparent"
+                     HeightRequest="450"
+                     Grid.Row="1"
+                     IsVisible="false"
+                     x:Name="sizeGridRow1"/>
+            <Button
+                Grid.Row="1"
+                x:Name="NewTestButton"
+                IsVisible="false"
+                CornerRadius="20"
+                VerticalOptions="End"
+                HorizontalOptions="Center"
+                Text="Repeat the test"
+                Clicked="NewTestButton_Clicked"
+                TextColor="DodgerBlue"
+                BackgroundColor="PaleGoldenrod"
+                FontAttributes="Bold"/>
         </Grid>
     </StackLayout>
 
